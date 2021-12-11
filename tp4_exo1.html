@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>World Map </title>
+    <script type="text/javascript" src="d3_v38.js"></script>
+    
+    <style type="text/css">
+        #container{
+            width: 1300px;
+            height: 550px;
+            overflow: scroll;
+            display: none;
+            margin: auto;
+        }
+        #p1{
+            text-align: center;
+            text-decoration: underline; 
+            font-size: 20px;
+            display: none;
+        }
+        #svg{
+            display: none;
+            margin: auto;
+        }
+        #pays{
+            padding:15px;
+            display: block;
+            margin: auto;
+            border: 2px solid black;
+
+        }
+        #some,#all{
+            display: block;
+            margin: auto;
+            margin-top: 10px;
+            background-color:aqua;
+        }
+        #all{
+            background-color:chocolate;
+        }
+
+    </style>
+</head>
+
+<body>
+    <p id="p1">Nom du pays</p>
+    <div id="container">
+        <svg id="svg"></svg>
+    </div>
+    <textarea rows="10" cols="30" id="pays">Entrer les noms des pays</textarea>
+    <input type="button" id="some" value="DrawSelected" onclick="draw(1)"></input>
+    <input type="button" id="all" value="DrawALL" onclick="draw(2)"></input>
+    <script type="text/javascript" src="tp4_exo1.js"></script>
+
+</body>
+
+</html>
